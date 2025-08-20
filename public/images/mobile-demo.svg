@@ -6,16 +6,49 @@
   <!-- Notch -->
   <rect x="50" y="15" width="40" height="15" rx="8" fill="#000000"/>
   
-  <!-- Website Content -->
-  <rect x="30" y="50" width="40" height="12" rx="2" fill="#3B82F6"/>
-  <rect x="30" y="70" width="80" height="4" rx="1" fill="#E5E7EB"/>
-  <rect x="30" y="80" width="60" height="4" rx="1" fill="#E5E7EB"/>
-  <rect x="30" y="90" width="70" height="4" rx="1" fill="#E5E7EB"/>
+  <!-- Status Bar -->
+  <text x="25" y="35" font-family="Arial" font-size="8" fill="#000000">9:41</text>
+  <text x="95" y="35" font-family="Arial" font-size="8" fill="#000000">100%</text>
   
-  <!-- Mobile Cards -->
-  <rect x="30" y="105" width="80" height="30" rx="4" fill="#F3F4F6"/>
-  <rect x="30" y="140" width="80" height="30" rx="4" fill="#F3F4F6"/>
-  <rect x="30" y="175" width="80" height="30" rx="4" fill="#F3F4F6"/>
+  <!-- Mobile Header -->
+  <rect x="25" y="45" width="90" height="20" rx="2" fill="#FFFFFF"/>
+  <text x="30" y="56" font-family="Arial" font-size="6" font-weight="bold" fill="#3B82F6">WebRevamp</text>
+  <rect x="100" y="50" width="10" height="10" rx="1" fill="#E5E7EB"/>
+  <rect x="101" y="51" width="8" height="2" rx="1" fill="#6B7280"/>
+  <rect x="101" y="54" width="8" height="2" rx="1" fill="#6B7280"/>
+  <rect x="101" y="57" width="8" height="2" rx="1" fill="#6B7280"/>
+  
+  <!-- Mobile Hero -->
+  <rect x="25" y="70" width="90" height="40" rx="4" fill="#F8FAFC"/>
+  <text x="30" y="82" font-family="Arial" font-size="6" font-weight="bold" fill="#1F2937">Modern websites</text>
+  <text x="30" y="90" font-family="Arial" font-size="4" fill="#6B7280">Responsive design for</text>
+  <text x="30" y="96" font-family="Arial" font-size="4" fill="#6B7280">all devices</text>
+  
+  <!-- Mobile CTA Button -->
+  <rect x="30" y="100" width="50" height="12" rx="6" fill="#3B82F6"/>
+  <text x="45" y="108" font-family="Arial" font-size="4" fill="#FFFFFF">Get Started</text>
+  
+  <!-- Mobile Features -->
+  <rect x="25" y="120" width="90" height="25" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="35" cy="128" r="3" fill="#10B981"/>
+  <text x="42" y="130" font-family="Arial" font-size="5" font-weight="bold" fill="#1F2937">Fast & Secure</text>
+  <text x="42" y="138" font-family="Arial" font-size="4" fill="#6B7280">Optimized performance</text>
+  
+  <rect x="25" y="150" width="90" height="25" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="35" cy="158" r="3" fill="#F59E0B"/>
+  <text x="42" y="160" font-family="Arial" font-size="5" font-weight="bold" fill="#1F2937">Mobile First</text>
+  <text x="42" y="168" font-family="Arial" font-size="4" fill="#6B7280">Perfect on phones</text>
+  
+  <rect x="25" y="180" width="90" height="25" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="35" cy="188" r="3" fill="#8B5CF6"/>
+  <text x="42" y="190" font-family="Arial" font-size="5" font-weight="bold" fill="#1F2937">SEO Ready</text>
+  <text x="42" y="198" font-family="Arial" font-size="4" fill="#6B7280">Google optimized</text>
+  
+  <!-- Contact Section -->
+  <rect x="25" y="210" width="90" height="20" rx="4" fill="#F3F4F6"/>
+  <text x="30" y="220" font-family="Arial" font-size="5" font-weight="bold" fill="#1F2937">Ready to transform?</text>
+  <rect x="30" y="222" width="35" height="8" rx="4" fill="#22C55E"/>
+  <text x="38" y="228" font-family="Arial" font-size="4" fill="#FFFFFF">Contact</text>
   
   <!-- Home Indicator -->
   <rect x="60" y="250" width="20" height="3" rx="2" fill="#9CA3AF"/>

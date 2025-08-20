@@ -7,14 +7,45 @@
   <rect x="40" y="20" width="320" height="200" rx="12" fill="#1F2937"/>
   <rect x="50" y="30" width="300" height="160" rx="4" fill="#FFFFFF"/>
   
-  <!-- Website Content -->
-  <rect x="60" y="40" width="80" height="20" rx="2" fill="#3B82F6"/>
-  <rect x="60" y="70" width="200" height="8" rx="2" fill="#E5E7EB"/>
-  <rect x="60" y="85" width="150" height="8" rx="2" fill="#E5E7EB"/>
-  <rect x="60" y="100" width="180" height="8" rx="2" fill="#E5E7EB"/>
+  <!-- Browser Header -->
+  <rect x="50" y="30" width="300" height="25" rx="4" fill="#F9FAFB"/>
+  <circle cx="60" cy="42" r="3" fill="#EF4444"/>
+  <circle cx="72" cy="42" r="3" fill="#F59E0B"/>
+  <circle cx="84" cy="42" r="3" fill="#10B981"/>
   
-  <!-- Cards -->
-  <rect x="60" y="120" width="80" height="50" rx="4" fill="#F3F4F6"/>
-  <rect x="150" y="120" width="80" height="50" rx="4" fill="#F3F4F6"/>
-  <rect x="240" y="120" width="80" height="50" rx="4" fill="#F3F4F6"/>
+  <!-- URL Bar -->
+  <rect x="100" y="37" width="180" height="10" rx="5" fill="#E5E7EB"/>
+  <text x="105" y="45" font-family="Arial" font-size="6" fill="#6B7280">webrevampstudio.com</text>
+  
+  <!-- Navigation -->
+  <rect x="60" y="60" width="280" height="20" rx="2" fill="#FFFFFF"/>
+  <text x="70" y="72" font-family="Arial" font-size="8" font-weight="bold" fill="#3B82F6">WebRevamp Studio</text>
+  <text x="200" y="72" font-family="Arial" font-size="6" fill="#374151">Home  Services  Work  About  Contact</text>
+  
+  <!-- Hero Section -->
+  <rect x="60" y="85" width="280" height="60" rx="4" fill="#F8FAFC"/>
+  <text x="70" y="100" font-family="Arial" font-size="10" font-weight="bold" fill="#1F2937">We build modern, responsive websites</text>
+  <text x="70" y="112" font-family="Arial" font-size="6" fill="#6B7280">From outdated to outstanding — your website will shine on any device</text>
+  
+  <!-- CTA Buttons -->
+  <rect x="70" y="120" width="60" height="18" rx="9" fill="#3B82F6"/>
+  <text x="85" y="131" font-family="Arial" font-size="6" fill="#FFFFFF">Get Audit</text>
+  <rect x="140" y="120" width="50" height="18" rx="9" fill="none" stroke="#3B82F6" stroke-width="1"/>
+  <text x="155" y="131" font-family="Arial" font-size="6" fill="#3B82F6">View Work</text>
+  
+  <!-- Feature Cards -->
+  <rect x="60" y="155" width="85" height="30" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="75" cy="165" r="4" fill="#10B981"/>
+  <text x="85" y="168" font-family="Arial" font-size="6" font-weight="bold" fill="#1F2937">Fast Loading</text>
+  <text x="85" y="178" font-family="Arial" font-size="5" fill="#6B7280">Lightning speed</text>
+  
+  <rect x="155" y="155" width="85" height="30" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="170" cy="165" r="4" fill="#F59E0B"/>
+  <text x="180" y="168" font-family="Arial" font-size="6" font-weight="bold" fill="#1F2937">Responsive</text>
+  <text x="180" y="178" font-family="Arial" font-size="5" fill="#6B7280">All devices</text>
+  
+  <rect x="250" y="155" width="85" height="30" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="265" cy="165" r="4" fill="#8B5CF6"/>
+  <text x="275" y="168" font-family="Arial" font-size="6" font-weight="bold" fill="#1F2937">Modern Design</text>
+  <text x="275" y="178" font-family="Arial" font-size="5" fill="#6B7280">Beautiful UI</text>
 </svg>
