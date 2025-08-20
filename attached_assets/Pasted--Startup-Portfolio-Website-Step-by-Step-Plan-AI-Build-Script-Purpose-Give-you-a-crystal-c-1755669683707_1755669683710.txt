@@ -1,0 +1,392 @@
+# Startup Portfolio Website — Step‑by‑Step Plan + AI Build Script
+
+> Purpose: Give you a crystal‑clear plan and a copy‑paste **AI build brief** you can drop into any code‑gen AI (Cursor, v0, Replit Agent, Copilot Workspace, ChatGPT Projects, etc.) to generate a production‑ready portfolio for your website‑revamp startup.
+
+---
+
+## 1) One‑liner & Positioning
+
+* **Target user:** Indian SMBs with outdated/non‑responsive websites.
+* **Value prop:** “We redesign outdated sites into modern, fast, mobile‑first experiences with ongoing maintenance, SEO and security.”
+* **Primary CTA:** *Get a Free Website Audit* → leads to contact form / WhatsApp.
+
+> Replace placeholders like `[BRAND_NAME]`, `[CITY]`, `[PHONE]`, `[EMAIL]`.
+
+---
+
+## 2) Sitemap
+
+* `/` Home
+* `/services` Services (Redesign, Responsive Dev, SEO, Maintenance, Integrations)
+* `/work` Portfolio/Case Studies (with Before/After slider)
+* `/about` About/Team/Process
+* `/contact` Contact (form, WhatsApp, Calendly)
+* `/privacy` Privacy Policy
+* `/terms` Terms
+
+---
+
+## 3) Page‑by‑Page Content & Wireframe Notes
+
+### Home (`/`)
+
+1. **Hero**
+
+   * Headline: *“Modern websites that convert.”*
+   * Sub: *“We upgrade outdated sites into fast, mobile‑first experiences.”*
+   * Buttons: `Get Free Audit` (primary), `View Work` (secondary)
+   * Trust: logos/badges or a simple line: *Trusted by local businesses in \[CITY]*
+2. **Pain → Outcome grid** (3–4 cards)
+
+   * Pain: Slow, Not Mobile Friendly, Poor Design, Hard to Update
+   * Outcome: 90+ Lighthouse, Responsive UI, Clean UX, Easy CMS/updates
+3. **Services snapshot** (cards linking to `/services`)
+4. **Before/After section** (image compare slider for 1 hero case)
+5. **Process (4 steps)**: Audit → Redesign → Build → Launch & Maintain
+6. **Results/Numbers**: e.g., +30% leads, <2.5s LCP, 100% mobile friendly (use placeholders until real data)
+7. **Testimonials** (placeholder quotes)
+8. **CTA band**: *Book a free 15‑min audit call*
+
+### Services (`/services`)
+
+* **Web Redesign**: UI/UX, info architecture, copy refresh
+* **Responsive Dev**: React/Next, Tailwind, A11y
+* **Performance/SEO**: Core Web Vitals, on‑page SEO, schema
+* **Maintenance**: updates, backups, security, monthly report
+* **Integrations**: WhatsApp, CRM, payment, booking, analytics
+* **Pricing teaser**: Ranges + link to contact; monthly plans table
+
+### Work (`/work`)
+
+* **Portfolio cards** (title, industry, brief, key metrics, tech stack)
+* **Case study page template** with: Problem → Solution → Impact → Gallery → Testimonial
+* **Before/After sliders** (multiple)
+
+### About (`/about`)
+
+* **Mission**: Help SMBs grow online
+* **Who we are**: `[BRAND_NAME]`, founded by Nikhil Borude (MERN)
+* **Process & Principles**: Performance first, clarity, maintainability
+* **Stack badges**: React/Next, Tailwind, Node/Express, Mongo, Vercel
+
+### Contact (`/contact`)
+
+* **Form**: name, email, company, current website URL, message
+* **CTA**: Free audit → promise a quick Loom/summary in 24–48 hrs
+* **WhatsApp**: one‑tap link, plus Calendly embed (optional)
+
+### Legal (`/privacy`, `/terms`)
+
+* Simple generated policies (edit for accuracy)
+
+---
+
+## 4) Visual Style & Brand System
+
+* **Logo/Wordmark:** simple text logo; use Inter, Poppins, or Sora
+* **Typography:**
+
+  * Headings: `Sora` 700/600
+  * Body: `Inter` 400/500
+* **Color palette:**
+
+  * Primary: `#2563EB` (blue) or your brand color
+  * Neutral: slate/stone
+  * Accent: `#10B981` (green) for success badges
+* **UI Pattern:** rounded‑2xl cards, soft shadows, lots of white space
+* **Motion:** subtle fade/slide with Framer Motion; respect `prefers-reduced-motion`
+
+---
+
+## 5) Feature Checklist (MVP → Pro)
+
+* [ ] Responsive (mobile‑first) across breakpoints
+* [ ] A11y: keyboard nav, alt text, focus styles, color contrast
+* [ ] Performance: lazy images, optimized fonts, LCP < 2.5s
+* [ ] SEO basics: unique `<title>`, meta description, canonical, Open Graph, Twitter cards
+* [ ] Sitemap.xml & robots.txt
+* [ ] Schema.org: `LocalBusiness`, `Organization`, `BreadcrumbList`, `FAQPage`
+* [ ] Analytics: GA4 + basic events (CTA clicks, form submit)
+* [ ] Contact form with validation + spam protection (honeypot/turnstile)
+* [ ] WhatsApp deep link and Calendly embed (optional)
+* [ ] Before/After image slider in Work pages
+* [ ] CMS or JSON content layer for portfolio items
+* [ ] 404 page + soft navigation
+
+---
+
+## 6) Recommended Stack
+
+* **Option A (strongly recommended):** Next.js 14 (App Router) + Tailwind + Framer Motion + shadcn/ui + React Hook Form + Zod + Vercel (deployment) + Resend (emails)
+* **Option B (simpler static):** Vite + React + Tailwind, Formspree for forms, Netlify or Vercel for hosting
+
+> The AI script below defaults to **Option A (Next.js)**.
+
+---
+
+## 7) Content You Can Paste In (Starter Copy)
+
+**Hero**
+
+* H1: *We turn outdated websites into growth engines.*
+* Sub: *Modern redesigns, fast performance, and ongoing maintenance for small businesses.*
+* CTA: `Get a Free Audit`
+
+**Process**
+
+1. Audit & Strategy → 2) UX/UI Redesign → 3) Build & Optimize → 4) Launch & Maintain
+
+**Services bullets**
+
+* Redesign: new IA, modern UI, conversion copy
+* Responsive Dev: mobile‑first, A11y, React/Next
+* Performance & SEO: Core Web Vitals, on‑page SEO, schema
+* Maintenance: updates, backups, security checks, monthly report
+* Integrations: WhatsApp, CRM, payment/booking
+
+**Maintenance Plans (example)**
+
+* Starter ₹2,999/mo — updates, backups, uptime checks
+* Growth ₹5,999/mo — + content edits, security scan, monthly report
+* Pro ₹9,999/mo — + feature hours, SEO tweaks, priority support
+
+**FAQ (examples)**
+
+* *How long does a redesign take?* 2–4 weeks for typical SMB sites.
+* *Can you migrate my content?* Yes, we migrate pages, images, and redirects.
+* *Do you host?* We deploy on Vercel/Netlify and set up your custom domain.
+
+---
+
+## 8) Data Model (for Portfolio CMS or JSON)
+
+```json
+{
+  "projects": [
+    {
+      "slug": "krishna-dentals",
+      "title": "Krishna Dentals Redesign",
+      "industry": "Healthcare",
+      "summary": "Mobile-first redesign with booking integration.",
+      "problem": "Outdated, slow, non-responsive site.",
+      "solution": "New IA, modern UI, WhatsApp booking, SEO.",
+      "impact": { "leads": "+35%", "lcp": "<2.2s" },
+      "stack": ["Next.js", "Tailwind", "Vercel"],
+      "beforeImage": "/images/krishna-before.jpg",
+      "afterImage": "/images/krishna-after.jpg"
+    }
+  ]
+}
+```
+
+---
+
+## 9) QA / Acceptance Criteria
+
+* **Performance:** Lighthouse ≥ 90 (Performance, SEO, Best Practices, A11y) on Home and Work pages
+* **A11y:** No critical axe violations; skip links and focus outlines present
+* **Forms:** Client & server validation; spam protection; success/error states
+* **SEO:** Titles/meta/OG per page; sitemap & robots live; schema validates in Rich Results Test
+* **Build:** No TypeScript errors; CI lint & format pass; env vars documented
+
+---
+
+## 10) Deployment
+
+* Domain on Namecheap/GoDaddy → point to Vercel
+* Set env vars in Vercel (`NEXT_PUBLIC_*` and server secrets)
+* Protect `/api` routes with rate limit and basic captcha/Turnstile
+* Create GA4 property and add measurement ID
+
+---
+
+# 🎯 COPY‑PASTE: AI Build Brief (for Code‑Gen AI)
+
+**Title:** Build a production‑ready Next.js portfolio for a website‑revamp studio
+
+**Project overview:**
+Build a fast, accessible, SEO‑friendly portfolio site for `[BRAND_NAME]`, a studio that upgrades outdated SMB websites. Stack: **Next.js 14 (App Router) + TypeScript + Tailwind + shadcn/ui + Framer Motion + React Hook Form + Zod + Vercel**. Include server actions/API routes for contact form email via Resend. Deliver a GitHub repo I can deploy on Vercel.
+
+**Pages & routes:**
+
+* `/` (Home)
+* `/services`
+* `/work` and dynamic `/work/[slug]`
+* `/about`
+* `/contact`
+* `/privacy`, `/terms`
+* `sitemap.xml`, `robots.txt`
+
+**Global requirements:**
+
+* Responsive, WCAG 2.1 AA, semantic HTML, keyboard navigation
+* Core Web Vitals: LCP < 2.5s, CLS < 0.1, TBT < 200ms
+* SEO: per‑page `<title>`, meta desc, canonical, Open Graph, Twitter tags
+* Schema.org: `Organization`, `LocalBusiness` (if address provided), `BreadcrumbList`, `FAQPage`
+* Animation: subtle fade/slide in using Framer Motion with `prefers-reduced-motion`
+* UI: shadcn/ui components, rounded‑2xl cards, soft shadow, clean spacing
+* Fonts: `Sora` for headings, `Inter` for body (via next/font)
+* Analytics: GA4 (env var `NEXT_PUBLIC_GA_ID`), track CTA clicks & form submits
+
+**Home content blocks:**
+
+1. Hero with H1, sub, CTA buttons (primary `Get a Free Audit`, secondary `View Work`), trust line: *Trusted by businesses in \[CITY]*
+2. Pain→Outcome grid (4 cards)
+3. Services snapshot (links to `/services`)
+4. Featured case: Before/After image compare slider
+5. 4‑step process section
+6. Metrics band (placeholders)
+7. Testimonials (static JSON)
+8. CTA band
+
+**Services page:** Cards for Redesign, Responsive Dev, Performance/SEO, Maintenance, Integrations. Include maintenance table with three plans and CTA.
+
+**Work page:**
+
+* Grid of projects read from `/data/projects.json` (see schema below)
+* Each card → `/work/[slug]`
+* Each case page shows: Problem → Solution → Impact → Gallery + Before/After sliders → Testimonial
+
+**About page:** Mission, founder bio (Nikhil Borude), stack badges, process principles.
+
+**Contact page:**
+
+* Form fields: name, email, company, website URL, message (min 20 chars)
+* Validation: Zod + react-hook-form; server action re‑validation
+* Spam: hidden honeypot + optional Cloudflare Turnstile (env `TURNSTILE_*`)
+* On submit: send email via Resend (env `RESEND_API_KEY`, `MAIL_TO`, `MAIL_FROM`)
+* Success/error toasts and states
+* WhatsApp deep link (`https://wa.me/[PHONE]`) and optional Calendly embed
+
+**Data files:**
+
+* `/data/projects.json` using this schema:
+
+```json
+{
+  "projects": [
+    {
+      "slug": "SAMPLE-SLUG",
+      "title": "Project Title",
+      "industry": "Industry",
+      "summary": "One‑line summary",
+      "problem": "Client problem",
+      "solution": "Our approach",
+      "impact": { "leads": "+35%", "lcp": "<2.2s" },
+      "stack": ["Next.js", "Tailwind", "Vercel"],
+      "beforeImage": "/images/sample-before.jpg",
+      "afterImage": "/images/sample-after.jpg",
+      "gallery": ["/images/1.jpg", "/images/2.jpg"],
+      "testimonial": { "quote": "Great work!", "author": "Owner, Company" }
+    }
+  ]
+}
+```
+
+**Components to include:**
+
+* `Navbar`, `Footer`, `Container`
+* `CTAButton` with analytics event on click
+* `SectionHeader` (title + subtitle)
+* `Card` grid components for Services and Pain→Outcome
+* `BeforeAfterSlider` using a lightweight lib (e.g., `react-compare-image`) or a custom draggable slider
+* `Testimonial` card
+* `ContactForm` with form + server action
+* `MetricsBand` and `ProcessSteps`
+
+**Utilities:**
+
+* `lib/analytics.ts`: GA event helper (`track(event, params)`) that no‑ops when GA ID missing
+* `lib/seo.ts`: helper to build meta tags
+
+**SEO & meta:**
+
+* Default metadata in `app/layout.tsx`, override in pages
+* Open Graph images generated via `/api/og?title=...`
+* `next-sitemap` setup for `sitemap.xml`/`robots.txt`
+
+**Styling & theming:**
+
+* Tailwind config with container, radius `2xl`, shadows, spacing scale
+* Light theme only (no dark mode) for simplicity
+
+**A11y:**
+
+* Focus rings, skip‑to‑content link, labeled form fields, aria‑labels for nav, alt text required prop for images
+
+**Env vars:**
+
+* `NEXT_PUBLIC_SITE_URL`
+* `NEXT_PUBLIC_GA_ID`
+* `RESEND_API_KEY`
+* `MAIL_FROM` (e.g., `studio@[domain]` via Resend)
+* `MAIL_TO` (your recipient)
+* Optional Turnstile: `TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY`
+
+**NPM packages:**
+
+* `framer-motion`, `react-hook-form`, `zod`, `react-compare-image`, `next-sitemap`, `clsx`, `resend` (or `nodemailer`), `lucide-react`, `shadcn/ui`
+
+**Commands (scaffold):**
+
+```bash
+npx create-next-app@latest [folder] --ts --tailwind --eslint --app --src-dir --import-alias @/*
+# Install extras
+npm i framer-motion react-hook-form zod react-compare-image next-sitemap clsx resend lucide-react
+```
+
+**Quality gates:**
+
+* Run Lighthouse on `/` and `/work` ≥ 90 across categories
+* `npm run lint` passes, TypeScript no errors
+* Validate schema in Google Rich Results for `FAQPage`/`Organization`
+
+**Deliverables:**
+
+* Complete repo with README (setup, env, deployment)
+* Content in `/data/projects.json`, images in `/public/images`
+* Deployed preview on Vercel
+
+**Brand placeholders (replace in code):**
+
+* `[BRAND_NAME]`: e.g., Revamp Labs
+* `[CITY]`: e.g., Pune
+* `[PHONE]`, `[EMAIL]`, `MAIL_TO`
+
+**Optional stretch:**
+
+* Minimal CMS via MDX files for case studies (`/content/work/*.mdx`)
+* OG image generation endpoint
+* Price calculator (simple form → monthly estimate)
+
+> Build now. Provide the full file tree, key files code, and post‑deploy steps.
+
+---
+
+## 11) Launch Checklist
+
+* [ ] Domain connected to Vercel; HTTPS active
+* [ ] All env vars set; email send tested
+* [ ] Forms validated; spam honeypot works
+* [ ] Sitemap/robots accessible
+* [ ] GA4 receiving events
+* [ ] Lighthouse ≥ 90 on key pages (mobile)
+* [ ] 404/500 pages present
+* [ ] Favicon & social preview look good
+
+---
+
+## 12) Quick Outreach Assets (bonus)
+
+* **Lead magnet:** Free 1‑page audit PDF (auto‑generated from their URL)
+* **Email template:** *“Noticed your site isn’t mobile‑friendly—here’s a 2‑min video of how it could look.”*
+* **Calendly description:** *Free 15‑min website audit for SMB owners in \[CITY]*
+
+---
+
+### How to use this
+
+1. Update placeholders in the **AI Build Brief**.
+2. Drop it into your favorite AI dev tool.
+3. Paste in the starter copy and data JSON to bootstrap content.
+4. Deploy to Vercel, connect domain, start outreach.
