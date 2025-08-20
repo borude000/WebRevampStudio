@@ -117,12 +117,7 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-                >
-                  <CheckCircle className="mr-2" size={16} />
-                </motion.div>
+                <CheckCircle className="mr-2" size={16} />
                 Trusted by 50+ businesses across India
               </motion.span>
             </motion.div>
