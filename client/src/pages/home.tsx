@@ -12,10 +12,50 @@ const fadeInUp = {
   transition: { duration: 0.6 }
 };
 
+const slideInLeft = {
+  initial: { opacity: 0, x: -50 },
+  animate: { opacity: 1, x: 0 },
+  transition: { duration: 0.8, ease: "easeOut" }
+};
+
+const slideInRight = {
+  initial: { opacity: 0, x: 50 },
+  animate: { opacity: 1, x: 0 },
+  transition: { duration: 0.8, ease: "easeOut" }
+};
+
+const scaleIn = {
+  initial: { opacity: 0, scale: 0.8 },
+  animate: { opacity: 1, scale: 1 },
+  transition: { duration: 0.6, ease: "easeOut" }
+};
+
 const staggerContainer = {
   animate: {
     transition: {
-      staggerChildren: 0.1
+      staggerChildren: 0.2
+    }
+  }
+};
+
+const floatingAnimation = {
+  animate: {
+    y: [0, -10, 0],
+    transition: {
+      duration: 3,
+      repeat: Number.POSITIVE_INFINITY,
+      ease: "easeInOut"
+    }
+  }
+};
+
+const pulseAnimation = {
+  animate: {
+    scale: [1, 1.05, 1],
+    transition: {
+      duration: 2,
+      repeat: Number.POSITIVE_INFINITY,
+      ease: "easeInOut"
     }
   }
 };
@@ -46,52 +86,112 @@ export default function Home() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-blue-50 py-20 lg:py-32">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="bg-gradient-to-br from-gray-50 to-blue-50 py-20 lg:py-32 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <motion.div 
+          className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-xl"
+          variants={floatingAnimation}
+          animate="animate"
+        />
+        <motion.div 
+          className="absolute bottom-20 right-10 w-48 h-48 bg-success/10 rounded-full blur-xl"
+          variants={floatingAnimation}
+          animate="animate"
+          transition={{ delay: 1 }}
+        />
+        
+        <div className="container mx-auto px-4 lg:px-8 relative">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
+            variants={staggerContainer}
             initial="initial"
             animate="animate"
-            variants={fadeInUp}
           >
             {/* Trust Badge */}
-            <div className="mb-6">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-success/10 text-success">
-                <CheckCircle className="mr-2" size={16} />
+            <motion.div 
+              className="mb-6"
+              variants={scaleIn}
+            >
+              <motion.span 
+                className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-success/10 text-success"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+                >
+                  <CheckCircle className="mr-2" size={16} />
+                </motion.div>
                 Trusted by 50+ businesses across India
-              </span>
-            </div>
+              </motion.span>
+            </motion.div>
             
-            <h1 className="text-4xl md:text-6xl font-sora font-bold text-dark mb-6 leading-tight">
+            <motion.h1 
+              className="text-4xl md:text-6xl font-sora font-bold text-dark mb-6 leading-tight"
+              variants={fadeInUp}
+            >
               We turn outdated websites into{' '}
-              <span className="text-primary">growth engines</span>
-            </h1>
+              <motion.span 
+                className="text-primary"
+                animate={{ 
+                  backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                }}
+                transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
+                style={{
+                  background: "linear-gradient(90deg, #3B82F6, #1D4ED8, #3B82F6)",
+                  backgroundSize: "200% 100%",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                growth engines
+              </motion.span>
+            </motion.h1>
             
-            <p className="text-xl text-gray-text mb-8 max-w-2xl mx-auto leading-relaxed">
+            <motion.p 
+              className="text-xl text-gray-text mb-8 max-w-2xl mx-auto leading-relaxed"
+              variants={slideInLeft}
+            >
               Modern redesigns, lightning-fast performance, and ongoing maintenance for small businesses ready to grow online.
-            </p>
+            </motion.p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <CTAButton
-                href="/contact"
-                size="lg"
-                eventLabel="hero_primary_cta"
-                icon={<Search size={20} />}
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              variants={slideInRight}
+            >
+              <motion.div
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
-                Get a Free Audit
-              </CTAButton>
+                <CTAButton
+                  href="/contact"
+                  size="lg"
+                  eventLabel="hero_primary_cta"
+                  icon={<Search size={20} />}
+                >
+                  Get a Free Audit
+                </CTAButton>
+              </motion.div>
               
-              <CTAButton
-                href="/work"
-                variant="secondary"
-                size="lg"
-                eventLabel="hero_secondary_cta"
-                icon={<ArrowRight size={20} />}
+              <motion.div
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 300, delay: 0.1 }}
               >
-                View Our Work
-              </CTAButton>
-            </div>
+                <CTAButton
+                  href="/work"
+                  variant="secondary"
+                  size="lg"
+                  eventLabel="hero_secondary_cta"
+                  icon={<ArrowRight size={20} />}
+                >
+                  View Our Work
+                </CTAButton>
+              </motion.div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -133,20 +233,67 @@ export default function Home() {
                 key={index}
                 className="text-center"
                 variants={fadeInUp}
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="bg-red-50 p-6 rounded-2xl mb-4">
-                  {item.problem.icon}
+                <motion.div 
+                  className="bg-red-50 p-6 rounded-2xl mb-4"
+                  whileHover={{ scale: 1.03 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <motion.div
+                    animate={{ 
+                      rotate: [0, -5, 5, 0],
+                      scale: [1, 1.1, 1] 
+                    }}
+                    transition={{ 
+                      duration: 2, 
+                      repeat: Number.POSITIVE_INFINITY,
+                      repeatDelay: 3
+                    }}
+                  >
+                    {item.problem.icon}
+                  </motion.div>
                   <h3 className="font-sora font-semibold text-lg text-dark mb-2 mt-4">{item.problem.title}</h3>
                   <p className="text-gray-text text-sm">{item.problem.desc}</p>
-                </div>
-                <div className="flex justify-center mb-4">
+                </motion.div>
+                
+                <motion.div 
+                  className="flex justify-center mb-4"
+                  animate={{ 
+                    y: [0, -3, 0],
+                    rotate: [90, 95, 85, 90]
+                  }}
+                  transition={{ 
+                    duration: 2,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: "easeInOut"
+                  }}
+                >
                   <ArrowRight className="text-primary text-2xl rotate-90" />
-                </div>
-                <div className="bg-success/10 p-6 rounded-2xl">
-                  {item.solution.icon}
+                </motion.div>
+                
+                <motion.div 
+                  className="bg-success/10 p-6 rounded-2xl"
+                  whileHover={{ scale: 1.03 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <motion.div
+                    animate={{ 
+                      scale: [1, 1.05, 1] 
+                    }}
+                    transition={{ 
+                      duration: 2, 
+                      repeat: Number.POSITIVE_INFINITY,
+                      repeatDelay: 2,
+                      delay: index * 0.5
+                    }}
+                  >
+                    {item.solution.icon}
+                  </motion.div>
                   <h3 className="font-sora font-semibold text-lg text-dark mb-2 mt-4">{item.solution.title}</h3>
                   <p className="text-gray-text text-sm">{item.solution.desc}</p>
-                </div>
+                </motion.div>
               </motion.div>
             ))}
           </motion.div>
@@ -190,22 +337,74 @@ export default function Home() {
             ].map((service, index) => (
               <motion.div
                 key={index}
-                className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow"
+                className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300"
                 variants={fadeInUp}
+                whileHover={{ 
+                  y: -8,
+                  scale: 1.02,
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)"
+                }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                  {service.icon}
-                </div>
-                <h3 className="font-sora font-semibold text-xl text-dark mb-4">{service.title}</h3>
+                <motion.div 
+                  className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6"
+                  whileHover={{ 
+                    scale: 1.1,
+                    rotate: 5,
+                    backgroundColor: "rgba(59, 130, 246, 0.2)"
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <motion.div
+                    animate={{ 
+                      rotateY: [0, 360] 
+                    }}
+                    transition={{ 
+                      duration: 4, 
+                      repeat: Number.POSITIVE_INFINITY,
+                      delay: index * 0.5
+                    }}
+                  >
+                    {service.icon}
+                  </motion.div>
+                </motion.div>
+                <motion.h3 
+                  className="font-sora font-semibold text-xl text-dark mb-4"
+                  whileHover={{ color: "#3B82F6" }}
+                  transition={{ duration: 0.2 }}
+                >
+                  {service.title}
+                </motion.h3>
                 <p className="text-gray-text mb-6">{service.desc}</p>
-                <ul className="space-y-2 text-sm text-gray-text">
+                <motion.ul 
+                  className="space-y-2 text-sm text-gray-text"
+                  variants={staggerContainer}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ once: true }}
+                >
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center">
-                      <CheckCircle className="text-success mr-2" size={16} />
+                    <motion.li 
+                      key={idx} 
+                      className="flex items-center"
+                      variants={slideInLeft}
+                      whileHover={{ x: 5 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <motion.div
+                        animate={{ scale: [1, 1.2, 1] }}
+                        transition={{ 
+                          duration: 1.5,
+                          repeat: Number.POSITIVE_INFINITY,
+                          delay: idx * 0.2
+                        }}
+                      >
+                        <CheckCircle className="text-success mr-2" size={16} />
+                      </motion.div>
                       {feature}
-                    </li>
+                    </motion.li>
                   ))}
-                </ul>
+                </motion.ul>
               </motion.div>
             ))}
           </motion.div>

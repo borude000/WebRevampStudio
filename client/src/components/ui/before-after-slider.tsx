@@ -1,5 +1,6 @@
 import React, { useState, useRef, useCallback } from 'react';
 import { ArrowLeftRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 interface BeforeAfterSliderProps {
   beforeImage: string;
@@ -79,45 +80,82 @@ export function BeforeAfterSlider({
   }, [isDragging, handleMouseMove, handleMouseUp, handleTouchMove, handleTouchEnd]);
 
   return (
-    <div 
+    <motion.div 
       ref={containerRef}
       className={`before-after-container bg-white rounded-xl overflow-hidden shadow-lg ${className}`}
       style={{ height: '400px' }}
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      whileHover={{ scale: 1.02 }}
     >
       {/* Before Image */}
-      <img 
+      <motion.img 
         src={beforeImage}
         alt={beforeAlt}
         className="w-full h-full object-cover"
         draggable={false}
+        initial={{ filter: "blur(3px)" }}
+        animate={{ filter: "blur(0px)" }}
+        transition={{ duration: 0.8 }}
       />
       
       {/* After Image */}
-      <div 
+      <motion.div 
         className="after-image"
         style={{
           clipPath: `polygon(${sliderPosition}% 0%, 100% 0%, 100% 100%, ${sliderPosition}% 100%)`
         }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <img 
+        <motion.img 
           src={afterImage}
           alt={afterAlt}
           className="w-full h-full object-cover"
           draggable={false}
+          initial={{ filter: "blur(3px)" }}
+          animate={{ filter: "blur(0px)" }}
+          transition={{ duration: 0.8, delay: 0.3 }}
         />
-      </div>
+      </motion.div>
       
       {/* Slider */}
-      <div 
+      <motion.div 
         className="before-after-slider"
         style={{ left: `${sliderPosition}%` }}
         onMouseDown={handleMouseDown}
         onTouchStart={handleTouchStart}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        animate={isDragging ? { scale: 1.15 } : { scale: 1 }}
+        transition={{ type: "spring", stiffness: 300 }}
       >
-        <div className="slider-button">
-          <ArrowLeftRight size={16} />
-        </div>
-      </div>
-    </div>
+        <motion.div 
+          className="slider-button"
+          animate={{ 
+            boxShadow: [
+              "0 0 0 0 rgba(59, 130, 246, 0.7)",
+              "0 0 0 10px rgba(59, 130, 246, 0)",
+              "0 0 0 0 rgba(59, 130, 246, 0)"
+            ]
+          }}
+          transition={{ 
+            duration: 2, 
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "easeInOut"
+          }}
+        >
+          <motion.div
+            animate={{ rotate: isDragging ? 90 : 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            <ArrowLeftRight size={16} />
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }

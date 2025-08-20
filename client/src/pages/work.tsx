@@ -78,20 +78,49 @@ export default function Work() {
                 key={project.slug}
                 className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100"
                 variants={fadeInUp}
-                whileHover={{ y: -5 }}
+                whileHover={{ 
+                  y: -8,
+                  scale: 1.02,
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
+                  borderColor: "rgba(59, 130, 246, 0.3)"
+                }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <div className="relative overflow-hidden">
-                  <img 
+                <motion.div 
+                  className="relative overflow-hidden"
+                  whileHover={{ scale: 1.03 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <motion.img 
                     src={project.afterImage}
                     alt={`${project.title} website redesign`}
-                    className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
+                    className="w-full h-48 object-cover"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.5 }}
                   />
-                  <div className="absolute top-4 right-4">
-                    <span className={`text-xs px-2 py-1 rounded ${getIndustryColor(project.industry)}`}>
+                  <motion.div 
+                    className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0"
+                    whileHover={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                  <motion.div 
+                    className="absolute top-4 right-4"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ delay: index * 0.1 + 0.5, type: "spring" }}
+                  >
+                    <motion.span 
+                      className={`text-xs px-2 py-1 rounded ${getIndustryColor(project.industry)}`}
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.2 }}
+                    >
                       {project.industry}
-                    </span>
-                  </div>
-                </div>
+                    </motion.span>
+                  </motion.div>
+                </motion.div>
                 
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
