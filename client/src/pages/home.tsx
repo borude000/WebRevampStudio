@@ -4,6 +4,7 @@ import { SEOHead } from '@/components/ui/seo-head';
 import { SectionHeader } from '@/components/ui/section-header';
 import { CTAButton } from '@/components/ui/cta-button';
 import { BeforeAfterSlider } from '@/components/ui/before-after-slider';
+import { Hero } from '@/components/Hero';
 import testimonialsData from '@/data/testimonials.json';
 
 const fadeInUp = {
@@ -85,111 +86,8 @@ export default function Home() {
         structuredData={structuredData}
       />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-blue-50 py-20 lg:py-32 relative overflow-hidden">
-        {/* Animated Background Elements */}
-        <motion.div 
-          className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-xl"
-          variants={floatingAnimation}
-          animate="animate"
-        />
-        <motion.div 
-          className="absolute bottom-20 right-10 w-48 h-48 bg-success/10 rounded-full blur-xl"
-          variants={floatingAnimation}
-          animate="animate"
-          transition={{ delay: 1 }}
-        />
-        
-        <div className="container mx-auto px-4 lg:px-8 relative">
-          <motion.div 
-            className="max-w-4xl mx-auto text-center"
-            variants={staggerContainer}
-            initial="initial"
-            animate="animate"
-          >
-            {/* Trust Badge */}
-            <motion.div 
-              className="mb-6"
-              variants={scaleIn}
-            >
-              <motion.span 
-                className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-success/10 text-success"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <CheckCircle className="mr-2" size={16} />
-                Trusted by 50+ businesses across India
-              </motion.span>
-            </motion.div>
-            
-            <motion.h1 
-              className="text-4xl md:text-6xl font-sora font-bold text-dark mb-6 leading-tight"
-              variants={fadeInUp}
-            >
-              We turn outdated websites into{' '}
-              <motion.span 
-                className="text-primary"
-                animate={{ 
-                  backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                }}
-                transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
-                style={{
-                  background: "linear-gradient(90deg, #3B82F6, #1D4ED8, #3B82F6)",
-                  backgroundSize: "200% 100%",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                growth engines
-              </motion.span>
-            </motion.h1>
-            
-            <motion.p 
-              className="text-xl text-gray-text mb-8 max-w-2xl mx-auto leading-relaxed"
-              variants={slideInLeft}
-            >
-              Modern redesigns, lightning-fast performance, and ongoing maintenance for small businesses ready to grow online.
-            </motion.p>
-            
-            {/* CTA Buttons */}
-            <motion.div 
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-              variants={slideInRight}
-            >
-              <motion.div
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <CTAButton
-                  href="/contact"
-                  size="lg"
-                  eventLabel="hero_primary_cta"
-                  icon={<Search size={20} />}
-                >
-                  Get a Free Audit
-                </CTAButton>
-              </motion.div>
-              
-              <motion.div
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300, delay: 0.1 }}
-              >
-                <CTAButton
-                  href="/work"
-                  variant="secondary"
-                  size="lg"
-                  eventLabel="hero_secondary_cta"
-                  icon={<ArrowRight size={20} />}
-                >
-                  View Our Work
-                </CTAButton>
-              </motion.div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
+      {/* Hero Section with Device Mockups */}
+      <Hero />
 
       {/* Pain to Outcome Grid */}
       <section className="py-20 bg-white">
