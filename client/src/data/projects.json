@@ -1,0 +1,67 @@
+{
+  "projects": [
+    {
+      "slug": "krishna-dentals",
+      "title": "Krishna Dentals Redesign",
+      "industry": "Healthcare",
+      "summary": "Complete redesign with appointment booking system and patient portal integration.",
+      "problem": "Outdated website with poor mobile experience and no online booking system, losing 60% of potential patients who expected modern digital services.",
+      "solution": "Modern responsive design with integrated WhatsApp booking, patient portal, and SEO optimization focused on local dental searches.",
+      "impact": { "leads": "+35%", "lcp": "<2.2s", "lighthouse": "95" },
+      "stack": ["Next.js", "Tailwind", "Vercel", "WhatsApp API"],
+      "beforeImage": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      "afterImage": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      "gallery": [
+        "https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+        "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+      ],
+      "testimonial": {
+        "quote": "Our website went from embarrassing to impressive. Patient bookings increased by 40% in the first month after launch.",
+        "author": "Dr. Priya Sharma",
+        "company": "Krishna Dentals, Mumbai"
+      }
+    },
+    {
+      "slug": "gupta-electronics",
+      "title": "Gupta Electronics E-commerce",
+      "industry": "E-commerce",
+      "summary": "E-commerce platform with inventory management and WhatsApp order integration.",
+      "problem": "Basic catalog website with no e-commerce functionality, forcing customers to call for orders and pricing, resulting in lost sales.",
+      "solution": "Full e-commerce platform with real-time inventory, secure payments, and WhatsApp order notifications for seamless customer experience.",
+      "impact": { "leads": "+50%", "lcp": "1.8s", "lighthouse": "93" },
+      "stack": ["React", "Stripe", "WhatsApp API", "Node.js"],
+      "beforeImage": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      "afterImage": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      "gallery": [
+        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+      ],
+      "testimonial": {
+        "quote": "The team understood our business needs perfectly. The new site loads incredibly fast and looks professional.",
+        "author": "Rajesh Gupta",
+        "company": "Gupta Electronics, Delhi"
+      }
+    },
+    {
+      "slug": "patel-textiles",
+      "title": "Patel Textiles B2B Portal",
+      "industry": "Manufacturing",
+      "summary": "B2B catalog website with bulk inquiry system and supplier portal.",
+      "problem": "Manual catalog management and inquiry process was time-consuming, with no digital presence for B2B customers to browse products.",
+      "solution": "Digital B2B portal with searchable catalog, bulk inquiry forms, and automated quotation system for streamlined business processes.",
+      "impact": { "leads": "+25%", "lcp": "2.1s", "lighthouse": "91" },
+      "stack": ["Next.js", "CMS", "SEO", "B2B Portal"],
+      "beforeImage": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      "afterImage": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      "gallery": [
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+      ],
+      "testimonial": {
+        "quote": "Best investment we made for our business. The maintenance plan keeps everything running smoothly.",
+        "author": "Meera Patel",
+        "company": "Patel Textiles, Ahmedabad"
+      }
+    }
+  ]
+}
