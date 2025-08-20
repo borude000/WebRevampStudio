@@ -94,11 +94,6 @@ export function Hero() {
               <div className="bg-gray-800 rounded-t-2xl p-3 shadow-2xl">
                 {/* Laptop Screen */}
                 <div className="bg-white rounded-lg overflow-hidden aspect-[16/10]">
-                  <img 
-                    src="/images/laptop-demo.svg" 
-                    alt="Website displayed on laptop"
-                    className="w-full h-full object-cover"
-                  />
                 </div>
               </div>
               {/* Laptop Base */}

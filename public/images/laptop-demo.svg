@@ -3,66 +3,71 @@
   <rect x="20" y="180" width="360" height="40" rx="8" fill="#E5E7EB"/>
   <rect x="30" y="185" width="340" height="30" rx="6" fill="#D1D5DB"/>
   
-  <!-- Laptop Screen -->
+  <!-- Laptop Screen Frame -->
   <rect x="40" y="20" width="320" height="200" rx="12" fill="#1F2937"/>
   <rect x="50" y="30" width="300" height="160" rx="4" fill="#FFFFFF"/>
   
   <!-- Browser Header -->
-  <rect x="50" y="30" width="300" height="25" rx="4" fill="#F9FAFB"/>
-  <circle cx="60" cy="42" r="3" fill="#EF4444"/>
-  <circle cx="72" cy="42" r="3" fill="#F59E0B"/>
-  <circle cx="84" cy="42" r="3" fill="#10B981"/>
+  <rect x="50" y="30" width="300" height="20" rx="4" fill="#F1F5F9"/>
+  <circle cx="60" cy="40" r="3" fill="#EF4444"/>
+  <circle cx="72" cy="40" r="3" fill="#F59E0B"/>
+  <circle cx="84" cy="40" r="3" fill="#10B981"/>
+  <rect x="100" y="36" width="150" height="8" rx="4" fill="#E5E7EB"/>
+  <text x="105" y="42" font-family="system-ui" font-size="5" fill="#6B7280">localhost:5000</text>
   
-  <!-- URL Bar -->
-  <rect x="100" y="37" width="180" height="10" rx="5" fill="#E5E7EB"/>
-  <text x="105" y="45" font-family="Arial" font-size="6" fill="#6B7280">localhost:5000</text>
+  <!-- Navigation Bar -->
+  <rect x="50" y="50" width="300" height="20" rx="0" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="0.5"/>
+  <text x="60" y="62" font-family="system-ui" font-size="8" font-weight="bold" fill="#3B82F6">WebRevamp Studio</text>
+  <text x="200" y="62" font-family="system-ui" font-size="6" fill="#374151">Home</text>
+  <text x="230" y="62" font-family="system-ui" font-size="6" fill="#374151">Services</text>
+  <text x="270" y="62" font-family="system-ui" font-size="6" fill="#374151">Work</text>
+  <text x="300" y="62" font-family="system-ui" font-size="6" fill="#374151">About</text>
+  <text x="325" y="62" font-family="system-ui" font-size="6" fill="#374151">Contact</text>
   
-  <!-- Header Navigation -->
-  <rect x="50" y="55" width="300" height="18" rx="0" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="0.5"/>
-  <text x="60" y="66" font-family="Arial" font-size="7" font-weight="bold" fill="#3B82F6">WebRevamp Studio</text>
-  <text x="200" y="66" font-family="Arial" font-size="5" fill="#374151">Home</text>
-  <text x="220" y="66" font-family="Arial" font-size="5" fill="#374151">Services</text>
-  <text x="248" y="66" font-family="Arial" font-size="5" fill="#374151">Work</text>
-  <text x="268" y="66" font-family="Arial" font-size="5" fill="#374151">About</text>
-  <text x="290" y="66" font-family="Arial" font-size="5" fill="#374151">Contact</text>
+  <!-- Main Website Content -->
+  <rect x="50" y="70" width="300" height="120" rx="0" fill="#FFFFFF"/>
   
-  <!-- Hero Section Background -->
-  <rect x="50" y="73" width="300" height="117" rx="0" fill="#FFFFFF"/>
+  <!-- Two Column Layout -->
+  <!-- Left Column - Text Content -->
+  <rect x="60" y="80" width="140" height="100" rx="4" fill="#FFFFFF"/>
+  <text x="70" y="95" font-family="system-ui" font-size="12" font-weight="bold" fill="#1F2937">We build modern,</text>
+  <text x="70" y="108" font-family="system-ui" font-size="12" font-weight="bold" fill="#3B82F6">responsive websites</text>
   
-  <!-- Device Mockups Area (Left Column) -->
-  <rect x="60" y="85" width="130" height="90" rx="4" fill="#F8FAFC"/>
-  <text x="70" y="100" font-family="Arial" font-size="8" font-weight="bold" fill="#1F2937">We build modern,</text>
-  <text x="70" y="110" font-family="Arial" font-size="8" font-weight="bold" fill="#3B82F6">responsive websites</text>
-  <text x="70" y="125" font-family="Arial" font-size="5" fill="#6B7280">From outdated to outstanding —</text>
-  <text x="70" y="133" font-family="Arial" font-size="5" fill="#6B7280">your website will shine on any device</text>
+  <text x="70" y="125" font-family="system-ui" font-size="7" fill="#6B7280">From outdated to outstanding — your</text>
+  <text x="70" y="133" font-family="system-ui" font-size="7" fill="#6B7280">website will shine on any device.</text>
   
   <!-- CTA Buttons -->
-  <rect x="70" y="145" width="40" height="12" rx="6" fill="#3B82F6"/>
-  <text x="80" y="152" font-family="Arial" font-size="4" fill="#FFFFFF">Get a Free Audit</text>
-  <rect x="120" y="145" width="35" height="12" rx="6" fill="none" stroke="#3B82F6" stroke-width="0.5"/>
-  <text x="128" y="152" font-family="Arial" font-size="4" fill="#3B82F6">View Work</text>
+  <rect x="70" y="145" width="50" height="15" rx="8" fill="#3B82F6"/>
+  <text x="85" y="155" font-family="system-ui" font-size="6" font-weight="bold" fill="#FFFFFF">Get a Free Audit</text>
   
-  <!-- Device Mockup Area (Right Column) -->
-  <rect x="200" y="85" width="140" height="90" rx="4" fill="#F1F5F9"/>
+  <rect x="130" y="145" width="40" height="15" rx="8" fill="none" stroke="#3B82F6" stroke-width="1"/>
+  <text x="140" y="155" font-family="system-ui" font-size="6" font-weight="bold" fill="#3B82F6">View Work</text>
   
-  <!-- Laptop Device in Right Column -->
-  <rect x="210" y="95" width="60" height="35" rx="3" fill="#1F2937"/>
-  <rect x="213" y="98" width="54" height="29" rx="1" fill="#FFFFFF"/>
-  <rect x="216" y="101" width="48" height="3" rx="1" fill="#F3F4F6"/>
-  <rect x="216" y="107" width="35" height="2" rx="1" fill="#3B82F6"/>
-  <rect x="216" y="112" width="25" height="2" rx="1" fill="#E5E7EB"/>
-  <rect x="216" y="116" width="30" height="2" rx="1" fill="#E5E7EB"/>
-  <rect x="216" y="120" width="15" height="6" rx="1" fill="#F3F4F6"/>
-  <rect x="235" y="120" width="15" height="6" rx="1" fill="#F3F4F6"/>
-  <rect x="254" y="120" width="10" height="6" rx="1" fill="#F3F4F6"/>
+  <!-- Right Column - Device Mockups -->
+  <rect x="210" y="80" width="130" height="100" rx="4" fill="#F8FAFC"/>
   
-  <!-- Mobile Device Overlapping -->
-  <rect x="275" y="115" width="20" height="40" rx="4" fill="#1F2937"/>
-  <rect x="277" y="120" width="16" height="30" rx="2" fill="#FFFFFF"/>
-  <rect x="279" y="123" width="12" height="2" rx="1" fill="#3B82F6"/>
-  <rect x="279" y="127" width="8" height="1" rx="0.5" fill="#E5E7EB"/>
-  <rect x="279" y="130" width="10" height="1" rx="0.5" fill="#E5E7EB"/>
-  <rect x="279" y="134" width="12" height="4" rx="1" fill="#F3F4F6"/>
-  <rect x="279" y="140" width="12" height="4" rx="1" fill="#F3F4F6"/>
-  <rect x="279" y="146" width="12" height="2" rx="1" fill="#3B82F6"/>
+  <!-- Laptop Device Mockup -->
+  <rect x="225" y="95" width="70" height="42" rx="4" fill="#374151"/>
+  <rect x="228" y="98" width="64" height="36" rx="2" fill="#FFFFFF"/>
+  
+  <!-- Website content in laptop -->
+  <rect x="230" y="100" width="60" height="4" rx="1" fill="#F3F4F6"/>
+  <rect x="230" y="106" width="45" height="3" rx="1" fill="#3B82F6"/>
+  <text x="232" y="111" font-family="system-ui" font-size="4" fill="#1F2937">WebRevamp Studio</text>
+  <rect x="230" y="114" width="35" height="2" rx="1" fill="#E5E7EB"/>
+  <rect x="230" y="118" width="40" height="2" rx="1" fill="#E5E7EB"/>
+  <rect x="230" y="122" width="20" height="8" rx="2" fill="#F3F4F6"/>
+  <rect x="255" y="122" width="20" height="8" rx="2" fill="#F3F4F6"/>
+  
+  <!-- Mobile Device Mockup (overlapping) -->
+  <rect x="290" y="110" width="25" height="50" rx="6" fill="#374151"/>
+  <rect x="293" y="115" width="19" height="40" rx="3" fill="#FFFFFF"/>
+  
+  <!-- Website content in mobile -->
+  <rect x="295" y="118" width="15" height="2" rx="1" fill="#3B82F6"/>
+  <rect x="295" y="122" width="12" height="1" rx="0.5" fill="#E5E7EB"/>
+  <rect x="295" y="125" width="10" height="1" rx="0.5" fill="#E5E7EB"/>
+  <rect x="295" y="129" width="15" height="6" rx="2" fill="#F3F4F6"/>
+  <rect x="295" y="137" width="15" height="6" rx="2" fill="#F3F4F6"/>
+  <rect x="295" y="145" width="10" height="4" rx="2" fill="#3B82F6"/>
 </svg>
