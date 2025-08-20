@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Menu, X } from 'lucide-react';
 import { CTAButton } from '@/components/ui/cta-button';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { trackEvent } from '@/lib/analytics';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -41,7 +42,7 @@ export function Header() {
       </button>
 
       <motion.header 
-        className="bg-white shadow-sm border-b sticky top-0 z-40"
+        className="bg-white dark:bg-gray-900 shadow-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-40 transition-colors duration-300"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
@@ -93,8 +94,8 @@ export function Header() {
                       href={item.href}
                       className={`px-3 py-2 text-sm font-medium transition-colors relative ${
                         location === item.href
-                          ? 'text-primary'
-                          : 'text-gray-text hover:text-primary'
+                          ? 'text-primary dark:text-primary'
+                          : 'text-gray-text dark:text-gray-300 hover:text-primary dark:hover:text-primary'
                       }`}
                     >
                       {item.name}
@@ -113,35 +114,52 @@ export function Header() {
               </motion.div>
             </div>
             
-            {/* CTA Button */}
-            <motion.div 
-              className="hidden md:block"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-            >
+            {/* Theme Toggle & CTA Button */}
+            <div className="hidden md:flex items-center space-x-4">
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.7 }}
               >
-                <CTAButton
-                  href="/contact"
-                  size="sm"
-                  eventLabel="header_cta"
-                >
-                  Get Free Audit
-                </CTAButton>
+                <ThemeToggle />
               </motion.div>
-            </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+              >
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <CTAButton
+                    href="/contact"
+                    size="sm"
+                    eventLabel="header_cta"
+                  >
+                    Get Free Audit
+                  </CTAButton>
+                </motion.div>
+              </motion.div>
+            </div>
             
-            {/* Mobile menu button */}
-            <motion.div 
-              className="md:hidden"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, delay: 0.5 }}
-            >
-              <motion.button
+            {/* Mobile theme toggle & menu button */}
+            <div className="md:hidden flex items-center space-x-2">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: 0.4 }}
+              >
+                <ThemeToggle />
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: 0.5 }}
+              >
+                <motion.button
                 type="button"
                 onClick={handleMobileMenuToggle}
                 className="text-gray-text hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary p-2 rounded-lg"
@@ -176,7 +194,8 @@ export function Header() {
                   )}
                 </AnimatePresence>
               </motion.button>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
           
           {/* Mobile Navigation */}
@@ -190,7 +209,7 @@ export function Header() {
                 transition={{ duration: 0.3, ease: "easeInOut" }}
               >
                 <motion.div 
-                  className="px-2 pt-2 pb-3 space-y-1 bg-white border-t"
+                  className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 transition-colors duration-300"
                   initial={{ y: -20 }}
                   animate={{ y: 0 }}
                   transition={{ duration: 0.3, delay: 0.1 }}
@@ -208,8 +227,8 @@ export function Header() {
                         href={item.href}
                         className={`block px-3 py-2 text-base font-medium rounded-lg transition-colors ${
                           location === item.href
-                            ? 'text-primary bg-primary/10'
-                            : 'text-gray-text hover:text-primary hover:bg-gray-50'
+                            ? 'text-primary bg-primary/10 dark:bg-primary/20 dark:text-primary'
+                            : 'text-gray-text dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800'
                         }`}
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
