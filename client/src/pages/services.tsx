@@ -214,7 +214,7 @@ export default function Services() {
       </section>
 
       {/* Maintenance Plans */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 lg:px-8">
           <SectionHeader 
             title="Maintenance plans that fit your needs"
@@ -295,7 +295,7 @@ export default function Services() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Process Overview */}
       <section className="py-20 bg-white">

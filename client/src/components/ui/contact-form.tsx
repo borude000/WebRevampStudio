@@ -45,20 +45,38 @@ export function ContactForm() {
     }
 
     setIsSubmitting(true);
-    
     try {
       // Track form submission
       trackEvent('form_submit', 'contact', 'contact_form');
-      
-      // Simulate API call (replace with actual implementation)
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      toast({
-        title: "Message sent successfully!",
-        description: "We'll send you a detailed audit within 24-48 hours.",
+
+      // Send data to Formspree via AJAX
+      const response = await fetch('https://formspree.io/f/mrbazjjn', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          company: data.company,
+          currentWebsite: data.currentWebsite,
+          message: data.message,
+        }),
       });
-      
-      form.reset();
+      if (response.ok) {
+        toast({
+          title: "Message sent successfully!",
+          description: "We'll send you a detailed audit within 24-48 hours.",
+        });
+        form.reset();
+      } else {
+        toast({
+          title: "Error sending message",
+          description: "Please try again or contact us directly.",
+          variant: "destructive",
+        });
+      }
     } catch (error) {
       toast({
         title: "Error sending message",
@@ -76,7 +94,7 @@ export function ContactForm() {
         Get Your Free Website Audit
       </h3>
       
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         {/* Honeypot field */}
         <input
           type="text"

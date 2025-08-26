@@ -38,8 +38,8 @@ export default function About() {
   ];
 
   const techStack = [
-    "React", "Next.js", "Tailwind CSS", "Node.js", 
-    "Express", "MongoDB", "Vercel", "TypeScript"
+    "HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS", "Node.js", 
+    "Express", "SQL", "MongoDB", "Vercel", "TypeScript"
   ];
 
   return (
@@ -98,7 +98,7 @@ export default function About() {
                 variants={fadeInUp}
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300"
+                  src="/images/About.png"
                   alt="Modern web development workspace"
                   className="w-full h-64 object-cover rounded-xl"
                 />
@@ -183,7 +183,7 @@ export default function About() {
               <div className="grid md:grid-cols-3 gap-8 items-center">
                 <div className="text-center">
                   <div className="w-32 h-32 bg-gradient-to-br from-primary to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-white text-4xl font-sora font-bold">NB</span>
+                    <img src="/images/Nikhil.jpg" alt="Nikhil Borude" className="w-32 h-32 rounded-full object-cover" />
                   </div>
                   <h3 className="font-sora font-semibold text-xl text-dark mb-1">Nikhil Borude</h3>
                   <p className="text-gray-text">Founder & Lead Developer</p>

@@ -315,14 +315,13 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-gray-100 rounded-2xl p-8">
               <div className="text-center mb-8">
-                <h3 className="font-sora font-semibold text-2xl text-dark mb-2">Krishna Dentals Redesign</h3>
+                <h3 className="font-sora font-semibold text-2xl text-dark mb-2">NSB Fitness</h3>
                 <p className="text-gray-text">Healthcare | Appointment booking integration</p>
               </div>
               
               <BeforeAfterSlider
-                beforeImage="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
-                afterImage="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
-                beforeAlt="Before - Outdated dental clinic website"
+                beforeImage="/images/fit1.png"
+                afterImage="/images/fit2.png"
                 afterAlt="After - Modern dental clinic website"
               />
               

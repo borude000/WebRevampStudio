@@ -20,10 +20,10 @@ const staggerContainer = {
 
 export default function Contact() {
   const contactInfo = {
-    email: 'hello@webrevampstudio.com',
-    phone: '+91 98765 43210',
-    location: 'Mumbai, India',
-    whatsapp: '919876543210'
+    email: 'hello.forcontactus@gmail.com',
+    phone: '+91 8087949226',
+    location: 'Pune, India',
+    whatsapp: '+918087949226'
   };
 
   return (
@@ -130,22 +130,6 @@ export default function Contact() {
                 </motion.div>
                 
                 {/* Calendar Booking */}
-                <motion.div 
-                  className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
-                  variants={fadeInUp}
-                >
-                  <h3 className="font-sora font-semibold text-xl text-dark mb-4">Book a Call</h3>
-                  <p className="text-gray-text mb-6">
-                    Schedule a free 15-minute consultation to discuss your project.
-                  </p>
-                  <a 
-                    href="#"
-                    className="inline-flex items-center bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
-                  >
-                    <Calendar className="mr-2" size={20} />
-                    Schedule Free Call
-                  </a>
-                </motion.div>
               </motion.div>
             </div>
           </div>
@@ -184,10 +168,7 @@ export default function Contact() {
                 question: "What's included in maintenance?",
                 answer: "Our maintenance plans include regular updates, security monitoring, backups, performance checks, and monthly reports."
               },
-              {
-                question: "Do you work with businesses outside Mumbai?",
-                answer: "Absolutely! We work with businesses across India and can handle everything remotely with regular video calls."
-              }
+             
             ].map((faq, index) => (
               <motion.div
                 key={index}

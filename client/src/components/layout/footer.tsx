@@ -29,10 +29,10 @@ export function Footer() {
   ];
 
   const contactInfo = {
-    email: 'hello@webrevampstudio.com',
-    phone: '+91 98765 43210',
-    location: 'Mumbai, India',
-    whatsapp: '919876543210'
+    email: 'hello.forcontactus@gmail.com',
+    phone: '+91 8087949226',
+    location: 'Pune, India',
+    whatsapp: '918087949226'
   };
 
   return (
@@ -49,7 +49,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://linkedin.com/company/webrevampstudio" 
+                href="https://www.linkedin.com/in/nikhil-borude-b6a4ba266/" 
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="LinkedIn"
                 target="_blank"
@@ -57,7 +57,7 @@ export function Footer() {
               >
                 <Linkedin size={20} />
               </a>
-              <a 
+              {/* <a 
                 href="https://twitter.com/webrevampstudio" 
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Twitter"
@@ -65,9 +65,9 @@ export function Footer() {
                 rel="noopener noreferrer"
               >
                 <Twitter size={20} />
-              </a>
+              </a> */}
               <a 
-                href="https://instagram.com/webrevampstudio" 
+                href="https://www.instagram.com/nikkkhil_000/" 
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Instagram"
                 target="_blank"
@@ -75,6 +75,7 @@ export function Footer() {
               >
                 <Instagram size={20} />
               </a>
+              
             </div>
           </div>
           

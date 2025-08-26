@@ -101,7 +101,7 @@ export default function Work() {
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.5 }}
                   />
-                  <motion.div 
+                  <motion.div  
                     className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0"
                     whileHover={{ opacity: 1 }}
                     transition={{ duration: 0.3 }}

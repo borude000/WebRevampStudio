@@ -1,66 +1,85 @@
 {
   "projects": [
     {
-      "slug": "krishna-dentals",
-      "title": "Krishna Dentals Redesign",
-      "industry": "Healthcare",
-      "summary": "Complete redesign with appointment booking system and patient portal integration.",
-      "problem": "Outdated website with poor mobile experience and no online booking system, losing 60% of potential patients who expected modern digital services.",
-      "solution": "Modern responsive design with integrated WhatsApp booking, patient portal, and SEO optimization focused on local dental searches.",
+      "slug": "Parkmate",
+      "title": "Parkmate- Smart Parking Solutions",
+      "industry": "Parking & Mobility",
+      "summary": "Complete redesign and development with real-time slot booking system, secure payment integration, and user order history",
+      "problem": "Urban areas face a huge challenge with parking availability. Traditional parking systems lack digital booking options, causing frustration, time waste, and revenue loss for operators.",
+      "solution": "Developed a modern responsive web application with real-time parking slot availability, booking system, secure payment gateway, and user-friendly order history. Added admin management features for tracking slots and bookings efficiently.",
       "impact": { "leads": "+35%", "lcp": "<2.2s", "lighthouse": "95" },
-      "stack": ["Next.js", "Tailwind", "Vercel", "WhatsApp API"],
-      "beforeImage": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      "afterImage": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      "stack": ["MERN", "TailwindCSS", "Razorpay API", "JWT Auth", "Vercel"],
+      "beforeImage": "/images/after1.jpg",
+      "afterImage": "/images/before.jpg",
       "gallery": [
-        "https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+  "/images/Untitled.jpg",
+  "/images/Untitled2.jpg",
+  "/images/Untitled3.jpg"
       ],
       "testimonial": {
-        "quote": "Our website went from embarrassing to impressive. Patient bookings increased by 40% in the first month after launch.",
-        "author": "Dr. Priya Sharma",
-        "company": "Krishna Dentals, Mumbai"
+        "quote": "Finding and booking parking slots became effortless with ParkMet. Our users love the convenience and we saw a 50% boost in engagement.",
+        "author": "Vaibhav Honde"
       }
     },
     {
-      "slug": "gupta-electronics",
-      "title": "Gupta Electronics E-commerce",
-      "industry": "E-commerce",
-      "summary": "E-commerce platform with inventory management and WhatsApp order integration.",
-      "problem": "Basic catalog website with no e-commerce functionality, forcing customers to call for orders and pricing, resulting in lost sales.",
-      "solution": "Full e-commerce platform with real-time inventory, secure payments, and WhatsApp order notifications for seamless customer experience.",
+      "slug": "malware-detection-rf",
+      "title": "Document & File Malware Detection — Python + Random Forest",
+      "industry": "Cybersecurity / Threat Detection",
+      "summary": "Built a machine-learning pipeline to detect malware in documents and executables using Random Forest, with a lightweight UI and SQL-backed logging/reporting.",
+      "problem": "Organizations were receiving infected attachments and files through email and shared drives. Manual checks and signature-only antivirus missed new variants, causing incidents and downtime.",
+      "solution": "Implemented a supervised ML system that extracts static features (metadata, entropy, n-grams, PE/pdf flags) and trains a Random Forest classifier. Added a simple web dashboard for uploads, real-time scoring, and report export. All scans and decisions are stored in SQL for audits and analytics",
       "impact": { "leads": "+50%", "lcp": "1.8s", "lighthouse": "93" },
-      "stack": ["React", "Stripe", "WhatsApp API", "Node.js"],
-      "beforeImage": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      "afterImage": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      "stack": ["React", "Python",
+        "scikit-learn (RandomForest)",
+        "pandas / numpy",
+        "joblib",
+        "Flask or Streamlit (dashboard)",
+        "SQLite/PostgreSQL (logging & reports)",
+        "Figma (UI wireframes)",
+        "Docker (packaging)",
+        "GitHub Actions (CI)"],
+      "beforeImage": "/images/m1.jpg",
+      "afterImage": "/images/m1.jpg",
       "gallery": [
-        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+        "/images/m1.jpg",
+        "/images/m2.jpg",
+        "/images/m3.jpg",
+        "/images/m4.jpg"
       ],
       "testimonial": {
-        "quote": "The team understood our business needs perfectly. The new site loads incredibly fast and looks professional.",
-        "author": "Rajesh Gupta",
-        "company": "Gupta Electronics, Delhi"
+        "quote": "The Random Forest detector cut incident triage time dramatically. The SQL-backed reports made compliance audits painless.",
+        "author": "Sanika Galande"
+        
       }
     },
     {
-      "slug": "patel-textiles",
-      "title": "Patel Textiles B2B Portal",
-      "industry": "Manufacturing",
-      "summary": "B2B catalog website with bulk inquiry system and supplier portal.",
-      "problem": "Manual catalog management and inquiry process was time-consuming, with no digital presence for B2B customers to browse products.",
-      "solution": "Digital B2B portal with searchable catalog, bulk inquiry forms, and automated quotation system for streamlined business processes.",
+      "slug": "ats-resume-checker",
+      "title": "ATS Resume Checker — Smart Resume Screening Tool",
+      "industry": "HR Tech / Recruitment",
+      "summary": "Developed an AI-powered web application that scans resumes against job descriptions, highlights missing keywords, and provides ATS compatibility scores with detailed improvement suggestions.",
+      "problem": "Job seekers often create resumes that look good to humans but fail to pass Applicant Tracking Systems (ATS). Recruiters also spend too much time manually screening resumes for keywords and formatting issues.",
+      "solution": "Built an ATS resume checker that parses resumes (PDF/DOCX), extracts text, compares against job description keywords, and generates a scorecard. The system highlights missing skills, formatting issues, and suggests improvements. Added SQL-backed history for users to track changes across versions.",
       "impact": { "leads": "+25%", "lcp": "2.1s", "lighthouse": "91" },
-      "stack": ["Next.js", "CMS", "SEO", "B2B Portal"],
-      "beforeImage": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      "afterImage": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      "stack": ["Python",
+        "NLTK / spaCy (text processing)",
+        "scikit-learn (keyword relevance scoring)",
+        "Flask / Streamlit (frontend)",
+        "SQL (resume history & reports)",
+        "Figma (wireframing)",
+        "Docker (deployment)"],
+      "beforeImage": "/images/a1.png",
+      "afterImage": "/images/a1.png",
       "gallery": [
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+       "/images/a1.png",
+       "/images/a2.png",
+       "/images/a3.png",
+       "/images/a4.png",
+       "/images/a5.png",
+       "/images/a6.png"
       ],
       "testimonial": {
-        "quote": "Best investment we made for our business. The maintenance plan keeps everything running smoothly.",
-        "author": "Meera Patel",
-        "company": "Patel Textiles, Ahmedabad"
+        "quote":  "The ATS Resume Checker simplified hiring. Candidates submit resumes that align better with job requirements, and our team saves hours every week.",
+        "company": ""
       }
     }
   ]

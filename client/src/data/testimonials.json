@@ -1,24 +1,24 @@
 {
   "testimonials": [
     {
-      "quote": "Our website went from embarrassing to impressive. Patient bookings increased by 40% in the first month after launch.",
-      "author": "Dr. Priya Sharma",
-      "company": "Krishna Dentals, Mumbai",
-      "avatar": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=60&h=60",
+      "quote": "Finding and booking parking slots has never been this easy. Our customers love ParkMet’s simple interface and quick payments.",
+      "author": "Mr.Vaibhav Honde",
+      "company": "",
+      "avatar": "/images/vaibhav.png",
       "rating": 5
     },
     {
-      "quote": "The team understood our business needs perfectly. The new site loads incredibly fast and looks professional.",
-      "author": "Rajesh Gupta",
-      "company": "Gupta Electronics, Delhi",
-      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=60&h=60",
+      "quote": "Our security team’s workload dropped significantly. The Random Forest-based malware detection caught threats that signature scanners missed.",
+      "author": "Sanika Galande",
+      "company": "",
+      "avatar": "/images/sanika.jpg",
       "rating": 5
     },
     {
-      "quote": "Best investment we made for our business. The maintenance plan keeps everything running smoothly.",
-      "author": "Meera Patel",
-      "company": "Patel Textiles, Ahmedabad",
-      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b47c?ixlib=rb-4.0.3&auto=format&fit=crop&w=60&h=60",
+      "quote": "Thanks to the ATS Resume Checker, I optimized my CV and finally cleared the screening stage. Landed 3 interview calls in a week!",
+      "author": "Gaurav Wagh",
+      "company": "",
+      "avatar": "/images/gaurav.png",
       "rating": 5
     }
   ]
