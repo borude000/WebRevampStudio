@@ -183,7 +183,7 @@ export default function About() {
               <div className="grid md:grid-cols-3 gap-8 items-center">
                 <div className="text-center">
                   <div className="w-32 h-32 bg-gradient-to-br from-primary to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <img src="/images/Nikhil.jpg" alt="Nikhil Borude" className="w-32 h-32 rounded-full object-cover" />
+                    <img src="/images/nikhil.jpg" alt="Nikhil Borude" className="w-32 h-32 rounded-full object-cover" />
                   </div>
                   <h3 className="font-sora font-semibold text-xl text-dark mb-1">Nikhil Borude</h3>
                   <p className="text-gray-text">Founder & Lead Developer</p>
